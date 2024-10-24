@@ -1,5 +1,4 @@
-# MiniTIL 
-## 내가 배운 작은 것들_매일매일 다짐하다!
+# MiniTIL : 내가 배운 작은 것들을 매일매일 다짐하다!
 <img src="https://velog.velcdn.com/images/soycong/post/99a34957-a499-4425-9e34-6aeb94548a20/image.png" width= "30%">
 
 ## TIL이란? Today I Learned의 줄임말
