@@ -1,23 +1,29 @@
-## MiniTIL 
-#### 내가 배운 작은 것들_매일매일 다짐하다!
+# MiniTIL 
+## 내가 배운 작은 것들_매일매일 다짐하다!
 <img src="https://velog.velcdn.com/images/soycong/post/99a34957-a499-4425-9e34-6aeb94548a20/image.png" width= "30%">
 
-### TIL: Today I Learned의 줄임말
+## TIL이란? Today I Learned의 줄임말
 * 해당 앱은 AutoLayout이 적용되지 않아, Iphone 13 Mini 유저만 온전히 사용 가능합니다..!
 
 ### <아이디어>
 > 다짐을 어떻게 남기면 좋을까? 생각해보다가..
 TIL 남기는 것 처럼, 일기처럼 남길 수 있는 기능이 좋을 거 같아 피그마로 디자인 해봤다!
 
-### <디자인>
+### <디자인> - Figma
 <img src="https://velog.velcdn.com/images/soycong/post/7eb13f5d-6829-49ee-9dfe-150b9a037ac3/image.png" width= "80%">
-
-요렇코롬 간단하게 디자인 해봤다!
 
 ### <대표 기능>
 - 다짐 작성 -> Save 버튼으로 저장
 - List 버튼을 누르면 내가 여태 쓴 내용들이 저장되어 있음!
  
+### <실제 앱 구동>
+#### Autolayout은 고려하지 못했고,, iphone 13 mini를 기준으로 만들었다!
+mini를 선택한 이유는,, 내가 해당 폰 유저이기 때문 ㅎ
+
+<img src="https://velog.velcdn.com/images/soycong/post/cef86a1c-bc86-4560-a502-23a901eb55ad/image.png" width= "120%">
+
+**런치화면 -> 메인화면 -> 리스트화면 -> 디테일화면** 순이다!
+
 ### <과정>
 1) ViewController에 다짐 작성 페이지(Main) 생성
 2) ListViewContoller에 Main에서 List 버튼을 누르면 생성되는 TableView 목록 페이지 생성
@@ -35,12 +41,5 @@ TIL 남기는 것 처럼, 일기처럼 남길 수 있는 기능이 좋을 거 �
 
 1)번의 경우는 placeholder 지정 후, Save 버튼을 눌렀을 때 사용자가 작성했던 text를 저장과 동시에 reset하고 다시 placeholder가 뜰 수 있도록 했다만.. 반응이 조금 느린 거 같다.
 
-### <실제 앱 구동>
-#### Autolayout은 고려하지 못했고,, iphone 13 mini를 기준으로 만들었다!
-mini를 선택한 이유는,, 내가 해당 폰 유저이기 때문 ㅎ
-
-<img src="https://velog.velcdn.com/images/soycong/post/cef86a1c-bc86-4560-a502-23a901eb55ad/image.png" width= "120%">
-
-**런치화면 -> 메인화면 -> 리스트화면 -> 디테일화면** 순이다!
 
  
