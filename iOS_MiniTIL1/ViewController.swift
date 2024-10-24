@@ -23,9 +23,10 @@ class ViewController: UIViewController {
         
         placeholderLabel.text = "내용을 입력해주세요."
         placeholderLabel.textColor = UIColor.lightGray
-        placeholderLabel.font = UIFont.italicSystemFont(ofSize: 16)
-        placeholderLabel.frame = CGRect(x: 5, y: 8, width: textView.frame.size.width - 10, height: 20)
+        placeholderLabel.font = UIFont.italicSystemFont(ofSize: 14)
+        placeholderLabel.frame = CGRect(x: 10, y: 8, width: textView.frame.size.width - 10, height: 20)
         placeholderLabel.isHidden = !textView.text.isEmpty
+        
         textView.addSubview(placeholderLabel)
         
         textView.delegate = self
@@ -39,20 +40,12 @@ class ViewController: UIViewController {
             // UserDefaults에 TIL 데이터를 저장
             saveTILData()
             
-            print("Data saved: \(TIL)")
+            //print("Data saved: \(TIL)")
             
             // 텍스트 필드 초기화 및 플레이스홀더 표시
             textView.text = "" // 텍스트 초기화
             placeholderLabel.isHidden = false // 플레이스홀더 표시
         }
-    }
-    
-    @IBAction func listButtonTapped(_ sender: UIButton) {
-        let listVC = storyboard?.instantiateViewController(withIdentifier: "ListViewController") as! ListViewController
-        
-        listVC.data = loadTILData()
-        
-        navigationController?.pushViewController(listVC, animated: true)
     }
 
     func saveTILData() {
